@@ -1,5 +1,7 @@
 package prueba.omar.gestortareas.domain;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
@@ -8,11 +10,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
+@Data
 @Entity
 public class Task {
 

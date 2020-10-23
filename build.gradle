@@ -15,6 +15,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'junit:junit:4.12'
+	testImplementation 'org.mockito:mockito-core:2.7.22'
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
@@ -26,6 +28,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.16'
 	testCompileOnly 'org.projectlombok:lombok:1.18.16'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+	testCompile('org.mockito:mockito-junit-jupiter:2.23.0')
 }
 
 test {
